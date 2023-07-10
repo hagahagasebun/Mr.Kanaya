@@ -20,32 +20,30 @@
             
         }
 
-
-        .btn-square {
-            display: inline-block;
-            padding: 10px 10px;
-            text-decoration: none;
-            background: #fff;/*ボタン色*/
-            color: #000;
-            border: 1px solid #000;
-            border-radius: 3px;
-            height: 50px;
-            width: 200px;
+        a.btn_01 {
+	        display: block;
+	        text-align: center;
+	        vertical-align: middle;
+	        text-decoration: none;
+	        width: 120px;
+	        margin: auto;
+	        padding: 1rem 4rem;
+	        font-weight: bold;
+	        border: 2px solid #27acd9;
+	        color: #27acd9;
+	        transition: 0.5s;
             font-size: 50px;
-            text-align: center;
             font-family: "HGP行書体";
-        
-            
-            
         }
 
-        .btn-square:active {
-       /*ボタンを押したとき*/
-           -webkit-transform: translateY(4px);
-            transform: translateY(4px);/*下に動く*/
-            border-bottom: none;/*線を消す*/
+        a.btn_01:hover {
+ 	        color: #fff;
+	        background: #27acd9;
         }
 
+
+
+       
         .example{
         display: flex;
         align-items: center;
@@ -66,6 +64,10 @@
         position: absolute;
         right: 0;
         }
+
+        .NO2{
+            font-size: 40px;
+        }
     
 
         
@@ -83,11 +85,12 @@
     <main>
         <h1>俺たちの四年</h1>
         <div class ="font">
-        <p>～これは作れました～</p>
+        <p>～これは作れました～<br><div class = "NO2">Bootstrapの解説書だよ</div></p>
+    
         </div>
         <div class="example">
         <img class ="left" src="image/gakuto(3).gif" alt="ガクトくん"></img>
-        <a href="#" class="btn-square">人生</a>
+        <a href="table.html" class="btn_01">閲覧</a>
         <img class ="right" src="image/gakuto(3).gif" alt="ガクトくん"></img>
         </div>
     </main>
