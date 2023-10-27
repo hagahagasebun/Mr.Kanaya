@@ -536,8 +536,16 @@ section {
   margin-bottom: 0;
 }
 
+.sen{
+  width:100%; 
+  border-top: 2px solid blue;
+  text-align: center;
+}
 
-
+.sen2{
+   width:100%;
+   border-top: 2px solid red;
+}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
