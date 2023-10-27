@@ -498,6 +498,8 @@ section {
   padding: 60px 0;
   overflow: hidden;
   text-align: center;
+
+  
 }
 
 .section-bg {
@@ -533,6 +535,8 @@ section {
 .section-title p {
   margin-bottom: 0;
 }
+
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
