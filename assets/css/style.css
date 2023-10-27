@@ -1553,3 +1553,7 @@ section {
     color: #333;
     text-decoration: none;
 }
+
+.substitution{
+  text-align: center;
+}
