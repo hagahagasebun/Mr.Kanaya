@@ -537,13 +537,15 @@ section {
 }
 
 .sen{
-  width:100%; 
+  width:60%; 
+  margin: auto;
   border-top: 2px solid blue;
   text-align: center;
 }
 
 .sen2{
-   width:100%;
+   width:60%;
+   margin: auto;
    border-top: 2px solid red;
 }
 /*--------------------------------------------------------------
