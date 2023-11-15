@@ -37,13 +37,13 @@
 
   /**
    * Scrolls to an element with header offset
-   */
-  const scrollto = (el) => {
+   */const scrollto = (el) => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     })
   }
+  
 
   /**
    * Mobile nav toggle
