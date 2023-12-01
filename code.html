@@ -530,9 +530,26 @@
       <p><img src="image/porfolio1.png" width="600" height="400"></p>
       <p>このコードは、GOODSページのアイテムをグリッドレイアウト(1)して、<br>
         ユーザーがアイテムをクリックした際に表示するためのコードです。</p>
+      <p>1, let portfolioContainer = select('.portfolio-container');</p>
+      <p>↑<br>アイテムを表示する為のコンテナ要素を取得してくるコードです。</p>
+      <P>2, if (portfolioContainer) { ... }</P>
+      <p>↑<br>コンテナ要素が存在する場合処理を行っていきます。</p>
+      <p>3, let portfolioIsotope = new Isotope(portfolioContainer, { ... });</p>
+      <p>↑<br>Isotopeライブラリを使用し、アイテムをグリッドレイアウトするコードです。</p>
+      <p>「itemSelector」 = GOODSページのアイテム<br>
+         「layoutMode」 = アイテムの行にあわせて配置するレイアウトモード</p>
+      <p>4,let portfolioFilters = select('#portfolio-flters li', true);</p>
+      <P>↑<br>アイテムをフィルタリングし、アイテムを取得してくるコードです。</P>
+      <p>5,on('click', '#portfolio-flters li', function(e) { ... }, true);</p>
+      <p>↑<br>アイテムをクリックした際、フィルタリングに対応したアイテムだけを表示するコードです。</p>
+      
+
+
       <P>(1)グリッドレイアウトとは？</P>
       <P>→要素など格子状に配置するデザイン手法のこと↓</P>
       <p><img src="image/gri.png" width="600" height="300"></p>
+    
+      
 
 
 
