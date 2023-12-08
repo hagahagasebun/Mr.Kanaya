@@ -110,6 +110,7 @@
                   <li><a href="#navi">・ナビゲーションリンクのクラスの削除と追加</a></li>
                   <li><a href="#menu">・メニューバーのアイコンの切り替え</a></li>
                   <li><a href="#goods">・GOODSページのフィルタリング</a></li>
+                  li><a href="#hash">・GOODSページの種類分け</a></li>
                 </ol>
                 
         
@@ -554,7 +555,31 @@
 
       <P>(1)グリッドレイアウトとは？</P>
       <P>→要素など格子状に配置するデザイン手法のこと↓</P>
-      <p><img src="image/gri.png" width="600" height="300"></p>
+      <p><img src="image/gri.png" width="600" height="300"></p><br>
+
+      <h4 id="hash">GOODSページの種類分け</h4><hr class="sen2"><br>
+      <p>まずはmain.jsで使われている部分を紹介します。</p><br>
+      <p><img src="image/hash1.png" ></p><br>
+      <p>このコードの内</p>
+      <p>if (window.location.hash)</p>
+      <p>↑</p>
+      <p>もしURLにハッシュが含まれている場合の条件文です。</p>
+      <p>let initial_nav = select(window.location.hash)</p>
+      <p>↑</p>
+      <p>URLのハッシュを取得し、対応する初期のナビゲーション要素を選択します</p>
+      <p>if (initial_nav)</p>
+      <p>↑</p>
+      <p>選択されたナビゲーション要素が存在する場合の条件文です。</p>
+      <p>navlinks.forEach((item) => {...})</p>
+      <p>↑</p>
+      <p>ナビゲーションリンクに対しての反復処理を行います。</p>
+      <p>もしitemのhref属性が現在のURLのハッシュと一致する場合、'active'クラスを追加します。</p>
+      <p>一致しない場合は、'active'クラスを削除します。</p>
+      <p>scrollto(window.location.hash)</p>
+      <p>↑</p>
+      <p> ページを読み込んだ後、指定されたハッシュの位置にスクロールします。</p>
+      <p>このコードにより、下の画像のように種類ごとに表示できるようになります。</p><br>
+      <p><img src="image/hash2.png" ></p><br>
     
       
 
